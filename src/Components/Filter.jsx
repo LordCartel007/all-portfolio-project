@@ -1,14 +1,22 @@
 import React from "react";
 import { InputGroup, Form } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Filter = ({ onTitleChange, onRatingChange }) => {
+  const navigate = useNavigate();
   return (
-    <div>
-      <h3> Filter by: </h3>
-      <InputGroup className="mb-3 w-50">
+    <div className="filterContainer">
+      <h3 className="text-white"> Filter by: </h3>
+      <button
+        className="homebutton mb-4"
+        onClick={() => navigate("/all-skills")}
+      >
+        View All Skills
+      </button>
+      <InputGroup className="inputcontainer mb-3  ">
         <InputGroup.Text id="basic-addon1">Title</InputGroup.Text>
         <Form.Control
-          placeholder="Enter the movie title"
+          placeholder="Enter the project title"
           aria-label="title"
           aria-describedby="basic-addon1"
           //   we used the ...inputvalues to seperate the rating from the title and update only the title when there is change
@@ -18,14 +26,14 @@ const Filter = ({ onTitleChange, onRatingChange }) => {
         />
       </InputGroup>
 
-      <InputGroup className="mb-3 w-50">
+      <InputGroup className="mb-3 w-30 ">
         <InputGroup.Text id="basic-addon1">Rating</InputGroup.Text>
         <Form.Control
           type="number"
           min={1}
           max={10}
           step={1}
-          placeholder="Enter the movie rating"
+          placeholder="Enter the project rating"
           aria-label="Rating"
           aria-describedby="basic-addon1"
           onChange={(e) => {

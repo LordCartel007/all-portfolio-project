@@ -7,3 +7,198 @@
 .custom-link:hover {
   color: darkblue; /* Optional: Change color on hover */
 }
+
+.filterContainer {
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  justify-items: center;
+  width: 50%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    padding: 10px;
+  }
+  @media (min-width: 768px) {
+    width: 70%;
+    padding: 40px;
+  }
+  @media (min-width: 900px) {
+    width: 50%;
+    padding: 40px;
+    margin-left: 60px;
+  }
+}
+
+.inputcontainer {
+}
+
+.cardtitle {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  flex: 1; /* Makes title fill available space */
+  text-align: center;
+  height: 7vh;
+}
+
+.carddescription {
+  height: 8vh;
+  font-size: 0.9rem;
+}
+
+.image-card {
+  height: 23vh;
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the card */
+  border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background-color: #0e0e10;
+}
+.desctitle {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  flex: 1; /* Makes title fill available space */
+  text-align: center;
+  height: 7vh;
+  color: #ffc107; /* Text color */
+}
+
+.descrating {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 7vh;
+  color: #ffc107; /* Text color */
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.descimg {
+  @media (max-width: 767px) {
+    width: 80vw;
+  }
+  @media (min-width: 768px) {
+    width: 60vw;
+  }
+  @media (min-width: 900px) {
+    width: 80vw;
+  }
+  @media (min-width: 1023px) {
+    width: 400px;
+  }
+}
+
+.descriptioncontainer {
+}
+
+.descvideo {
+  @media (max-width: 767px) {
+    width: 90vw;
+    height: 30vh;
+  }
+  @media (min-width: 768px) {
+    width: 90vw;
+    height: 35vh;
+  }
+  @media (min-width: 900px) {
+    width: 90vw;
+    height: 33vh;
+  }
+  @media (min-width: 1023px) {
+    width: 700px;
+    height: 380px;
+  }
+  //media query for precise targeting of device
+  /* @media all and  (max-width:1024px),(max-height: 600px)
+{   width: 90vw;
+  height: 80vh;
+}  */
+}
+
+.homebutton {
+  background-color: #ffc107;
+  color: #0e0e10; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Optional: Rounded corners */
+  font-family: "Rye", serif;
+  margin-top: 25px;
+  padding: 10px;
+}
+
+.descparagraph {
+  font-weight: 400;
+  font-style: normal;
+  color: #d9ecff; /* Text color */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  justify-self: center;
+  width: 60%;
+  font-size: 1.1rem;
+  @media (max-width: 767px) {
+    width: 85vw;
+  }
+  @media (min-width: 768px) {
+    width: 65vw;
+  }
+  @media (min-width: 900px) {
+    width: 85vw;
+  }
+  @media (min-width: 1023px) {
+    width: 450px;
+  }
+}
+
+.descriptionSpan {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  flex: 1; /* Makes title fill available space */
+  text-align: center;
+  height: 7vh;
+  color: #ffc107; /* Text color */
+}
+
+.skillsdiv {
+  align-content: center;
+}
+
+.descriptionSpantwo {
+  font-size: 1.2rem;
+  padding: 40px;
+  text-decoration: none;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  flex: 1; /* Makes title fill available space */
+  text-align: center;
+
+  color: #ffc107; /* Text color */
+}

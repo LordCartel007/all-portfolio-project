@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import AddMovie from "./Components/AddMovie";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Description from "./Components/Description.jsx";
+import Skills from ".//Components/Skills.jsx";
 
 // this is the main component that will hold all the other components
 // setting use state to hold the original movies and the filtered movies
@@ -49,19 +50,23 @@ function App() {
     <Router>
       <Routes>
         {/* rendering html routes */}
+        <Route path="/all-skills" element={<Skills />} />
         <Route
           path="/"
           element={
-            <Container className="bg-black">
-              <AddMovie onAddMovie={addNewMovie} />
-              <Filter
-                onTitleChange={titleChangeHandler}
-                onRatingChange={ratingChangeHandler}
-              />
-              <MovieList movies={filteredMovies} />
-            </Container>
+            <>
+              <div></div>
+              <div className="min-h-screen bg-black mb-0 pb-0">
+                <AddMovie onAddMovie={addNewMovie} />
+                <Filter
+                  onTitleChange={titleChangeHandler}
+                  onRatingChange={ratingChangeHandler}
+                />
+                <MovieList movies={filteredMovies} />
+              </div>
+            </>
           }
-        />{" "}
+        />
         <Route
           path="/eachmovie/:id"
           element={<Description movies={originalMovies} />}

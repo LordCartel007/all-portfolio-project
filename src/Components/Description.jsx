@@ -13,22 +13,51 @@ const Description = ({ movies }) => {
   }
 
   return (
-    <div style={{ textAlign: "center", marginTop: "20px" }}>
-      <h2>{movie.title}</h2>
-      <h3> {movie.rating}</h3>
-      <img width="560" height="315" src={movie.Image} alt="" />
-      <p>{movie.description}</p>
+    <div
+      className="descriptioncontainer"
+      style={{ textAlign: "center", marginTop: "20px" }}
+    >
+      <h2 className="desctitle">{movie.title}</h2>
+      <h3 className="descrating"> {movie.rating}</h3>
+      <img className="descimg" src={movie.Image} alt="" />
+      <div>
+        <button
+          className="homebutton"
+          onClick={() => (window.location.href = movie.githubcode)}
+        >
+          View GitHub Code
+        </button>
+        <button
+          className="homebutton"
+          onClick={() => (window.location.href = movie.hostedsite)}
+        >
+          View hosted project
+        </button>
+      </div>
 
+      <p className="descparagraph">
+        <span className="descriptionSpan"> Description:</span>{" "}
+        {movie.description}
+      </p>
+      <p className="descparagraph">
+        <span className="descriptionSpan"> Packages Used:</span>{" "}
+        {movie.packages}
+      </p>
+      <br />
+      <p className="">
+        <span className="descriptionSpantwo"> Watch Project Video Below</span>{" "}
+      </p>
       <iframe
-        width="800"
-        height="500"
+        className="descvideo"
         src={movie.trailer}
         title={`Trailer for ${movie.title}`}
         frameBorder="0"
         allowFullScreen
       ></iframe>
       <br />
-      <button onClick={() => navigate("/")}>Back to Home</button>
+      <button className="homebutton" onClick={() => navigate("/")}>
+        Back to Home
+      </button>
     </div>
   );
 };
