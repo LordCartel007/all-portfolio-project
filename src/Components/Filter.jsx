@@ -7,12 +7,7 @@ const Filter = ({ onTitleChange, onRatingChange }) => {
   return (
     <div className="filterContainer">
       <h3 className="text-white"> Filter by: </h3>
-      <button
-        className="homebutton mb-4"
-        onClick={() => navigate("/all-skills")}
-      >
-        View All Skills
-      </button>
+
       <InputGroup className="inputcontainer mb-3  ">
         <InputGroup.Text id="basic-addon1">Title</InputGroup.Text>
         <Form.Control
@@ -41,6 +36,13 @@ const Filter = ({ onTitleChange, onRatingChange }) => {
           }}
         />
       </InputGroup>
+
+      <button
+        className="homebutton mb-4"
+        onClick={() => navigate("/all-skills")}
+      >
+        View All Skills
+      </button>
     </div>
   );
 };
