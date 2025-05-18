@@ -202,3 +202,9 @@ body,
 
   color: #ffc107; /* Text color */
 }
+
+.gitHubLink {
+  text-decoration: none; /* Removes the underline */
+
+  color: #000;
+}

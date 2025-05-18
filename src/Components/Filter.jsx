@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 
 const Filter = ({ onTitleChange, onRatingChange }) => {
   const navigate = useNavigate();
+
+  const handleGithub = (e) => {
+    <a href="https://github.com/LordCartel007" className=""></a>;
+  };
   return (
     <div className="filterContainer">
       <h3 className="text-white"> Filter by: </h3>
@@ -42,6 +46,13 @@ const Filter = ({ onTitleChange, onRatingChange }) => {
         onClick={() => navigate("/all-skills")}
       >
         View All Skills
+      </button>
+      <button className="homebutton mb-4">
+        <a className="gitHubLink" href="https://github.com/LordCartel007">
+          <div className="inner">
+            <span>GitHub Profile</span>
+          </div>
+        </a>
       </button>
     </div>
   );
