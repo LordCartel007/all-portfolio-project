@@ -2,6 +2,7 @@ import React from "react";
 import { InputGroup, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
+const linkedin = "https://www.linkedin.com/in/casey-daniel-33b771341/";
 const Filter = ({ onTitleChange, onRatingChange }) => {
   const navigate = useNavigate();
 
@@ -10,6 +11,15 @@ const Filter = ({ onTitleChange, onRatingChange }) => {
   };
   return (
     <div className="filterContainer">
+      <div>
+        <button
+          className="homebutton"
+          onClick={() => (window.location.href = linkedin)}
+        >
+          LinkedIn Profile
+        </button>
+        <button className="homebutton">Email Me: kccee007@gmail.com</button>
+      </div>
       <h3 className="text-white"> Filter by: </h3>
 
       <InputGroup className="inputcontainer mb-3  ">

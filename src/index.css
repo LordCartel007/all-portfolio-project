@@ -100,7 +100,7 @@ body,
     width: 80vw;
   }
   @media (min-width: 1023px) {
-    width: 400px;
+    width: 50vw;
   }
 }
 
@@ -121,8 +121,8 @@ body,
     height: 33vh;
   }
   @media (min-width: 1023px) {
-    width: 700px;
-    height: 380px;
+    width: 750px;
+    height: 420px;
   }
   //media query for precise targeting of device
   /* @media all and  (max-width:1024px),(max-height: 600px)
@@ -146,6 +146,9 @@ body,
   font-family: "Rye", serif;
   margin-top: 25px;
   padding: 10px;
+  @media (max-width: 767px) {
+    font-size: 10px;
+  }
 }
 
 .descparagraph {

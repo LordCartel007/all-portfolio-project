@@ -8,6 +8,8 @@ const Description = ({ movies }) => {
   // Find the movie with the matching id
   const movie = movies.find((movie) => movie.id === parseInt(id, 10));
 
+  const linkedin = "https://www.linkedin.com/in/casey-daniel-33b771341/";
+
   if (!movie) {
     return <p>Movie not found</p>;
   }
@@ -19,6 +21,16 @@ const Description = ({ movies }) => {
     >
       <h2 className="desctitle">{movie.title}</h2>
       <h3 className="descrating"> {movie.rating}</h3>
+      <div>
+        <button
+          className="homebutton"
+          onClick={() => (window.location.href = linkedin)}
+        >
+          LinkedIn Profile
+        </button>
+        <button className="homebutton">Email: kccee007@gmail.com</button>
+      </div>
+
       <img className="descimg" src={movie.Image} alt="" />
       <div>
         <button
