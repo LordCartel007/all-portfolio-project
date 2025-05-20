@@ -64,10 +64,10 @@ const movieList = [
     title: "Cartel AI (Startup)",
     description:
       "My little Ai startup, a chat bot that you can text and talk with , it uses voice recognition it can read and see any input file you give it , you can upload a pdf, code , maths questions, picture etc it will see the file and solve any problem or question you asked it about the file. So it can read a pdf file to you , solve maths , write code, tell you a joke and it has a voice recognition system that allows you to open any website with voice commands. it also has a dark or white theme plus sign up, login, forget password authentication and otp verification etc",
-    rating: 8,
+    rating: 9,
     Image:
       "https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/ai+cartel.png",
-    trailer: "https://www.youtube.com/embed/o1hc5yuynX8?si=IMBI-vb_h1O2Rrec",
+    trailer: "https://www.youtube.com/embed/3Qj4JlU-bbo?si=-FeGXTMWNSxG7kz_",
     githubcode: "https://github.com/LordCartel007/Cartel-Chat-Bot",
     packages:
       "@tailwindcss/vite, react vite,axios, framer-motion, react , react-dom, react-hot-toast, react-router-dom, sign-up-auth, styled-components, tailwindcss, zustand",
