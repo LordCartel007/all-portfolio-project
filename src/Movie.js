@@ -248,6 +248,20 @@ const movieList = [
     packages: " just javascript , css and html",
     hostedsite: "https://image-slider-jet.vercel.app/",
   },
+  {
+    id: 19,
+    title: "Cool ThreeJs Portfolio",
+    description:
+      " A cool threejs porfolio website with private domain , it has two 3d objects and cool animation using gsap. It has an email sending system that sends email to the owner at a click of a button . It has an all project page with a search filter bar. You can check hosted project in the link. Well this is the project",
+    rating: 10,
+    Image:
+      "https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/3d+porfolio.png",
+    trailer: "https://www.youtube.com/embed/_bQsV2Hl8eA?si=-LAiFZZGxfLCJLvJ",
+    githubcode: "https://github.com/LordCartel007/3d-porfolio",
+    packages:
+      "  @emailjs/browser, gsap/react, react-three/drei, react-three/fiber,react-three/postprocessing, react-three/postprocessing, tailwindcss/vite, types/three, bootstrap, gsap, react, react-countup, react-dom, react-responsive, react-router-dom, tailwindcss, three",
+    hostedsite: "https://www.caseydaniel.online/",
+  },
 ];
 
 export default movieList;
