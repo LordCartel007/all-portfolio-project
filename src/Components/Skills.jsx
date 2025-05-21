@@ -15,7 +15,7 @@ const Skills = () => {
         azure), GitHub, Git, REST APIs, Postman, Bootstrap, Material UI,
         Tailwind CSS, Redux, React Router, Axios, Seo , Pug ,ThreeJs, Stripe,
         Flutter wave , S3 bucket , Frontend, Backend , Responsiveness , styled
-        component css etc
+        component css , debugging etc
       </p>
       <button className="homebutton" onClick={() => navigate("/")}>
         Back to Home
