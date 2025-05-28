@@ -10,12 +10,12 @@ const Skills = () => {
     >
       <p className="descparagraph">
         <span className="descriptionSpan"> Skills: </span>
-        AWS, React, Node.js, Express.js, MongoDB, JavaScript, HTML, CSS, Nextjs,
-        Domain Configuration, Hosting (Netlify, Vercel, aws , render, microsoft
-        azure), GitHub, Git, REST APIs, Postman, Bootstrap, Material UI,
-        Tailwind CSS, Redux, React Router, Axios, Seo , Pug ,ThreeJs, Stripe,
-        Flutter wave , S3 bucket , Frontend, Backend , Responsiveness , styled
-        component css , debugging etc
+        AWS,Typescript, React, Node.js, Express.js, MongoDB, JavaScript, HTML,
+        CSS, Nextjs, Domain Configuration, Hosting (Netlify, Vercel, aws ,
+        render, microsoft azure), GitHub, Git, REST APIs, Postman, Bootstrap,
+        Material UI, Tailwind CSS, Redux, React Router, Axios, Seo , Pug
+        ,ThreeJs, Stripe, Flutter wave , S3 bucket , Frontend, Backend ,
+        Responsiveness , styled component css , debugging etc
       </p>
       <button className="homebutton" onClick={() => navigate("/")}>
         Back to Home
