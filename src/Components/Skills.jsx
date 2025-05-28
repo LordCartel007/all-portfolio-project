@@ -10,7 +10,7 @@ const Skills = () => {
     >
       <p className="descparagraph">
         <span className="descriptionSpan"> Skills: </span>
-        AWS,Typescript, React, Node.js, Express.js, MongoDB, JavaScript, HTML,
+        AWS, Typescript, React, Node.js, Express.js, MongoDB, JavaScript, HTML,
         CSS, Nextjs, Domain Configuration, Hosting (Netlify, Vercel, aws ,
         render, microsoft azure), GitHub, Git, REST APIs, Postman, Bootstrap,
         Material UI, Tailwind CSS, Redux, React Router, Axios, Seo , Pug
